@@ -1,0 +1,9 @@
+1. Programming language is a language through which we instruct a computer to perform our    desired task .
+2.Programming makes our work lot more easier because it can perform same task multiple  times without getting tired. For example - if we write a code to convert celcius into  fahreheit and vice versa now it can be used multiple times by any user without  remembering the formula or going through calculation.
+3.Some features of java are:
+   *First feature of java is that it is very easy to write and readable.
+   *It is platform dependent which means if we write a source file of java in windows         platform we can use it on linux as well as mac , the only condition here is jvm interpreter     should be installed on other platform and one more thing jvm is not platform     independent   for every platform there is a different version of jvm but bytecode will     still execute on   them.
+   *We can solve real world problems and make real world entity by using java object and     class concept.
+4. Object are instance of a class, these are the real world entities which has some    features of them and perform some task. To a create a new object "new" keyword is    used.
+5. Classes are the blueprint of how a object will work and what it should have .
+6. Main method in java is basically the point from which jvm will start execution of    programs in java , program of main method is written inside the jvm  so it is fixed that    all the programs written in java executes starts its execution from main only.
