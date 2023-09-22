@@ -1,0 +1,37 @@
+1. As Array is treated as objects in java the default of array is zero.
+2. No we cannot pass the negative number in Array size , because it will     show NegativeArraySizeException.
+3.Array is stored inside Heap memory.
+4.There are two disadvantages of array:
+    (i) We cannot change the size of array at runtime.
+    (ii) We cannot add other type of data inside  a particular datatype array.
+5.Anonymous array don't have any name and it should be used only once whether you are    passing a string to a method of using it for something else.
+    for example:
+ class Add{
+int add(int a[]){
+    int res = 0;
+    for ( int b : a )
+    {
+        res = b + res;
+    }
+    return res;
+}}
+
+
+class Anony{
+    public static void main(String[] args) {
+       Add ans= new Add();
+       int result = ans.add( new int [] {3,56,89,45});
+       System.out.println(result);
+
+    }
+}
+
+6.We can traverse an array in java by using for loop or enhanced for loop.
+7.     Length in java is used to calculate the length of array which means no. of        columns of array in java.
+                       for example:     int a[]= {2,3,5,6};
+                                              for (int i= 0; i<a.length; i++)
+                                                System.out.println(a[i]);
+          
+     Length() is used to calculate the length of a string.it is a method in string.
+          
+     
