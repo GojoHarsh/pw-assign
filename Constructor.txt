@@ -1,0 +1,21 @@
+1. Whenever me make  object of a class , for making objects we use new keyword along with the class name and parenthesis() , this     parenthesis is nothing but a constructor method used to construct a new object  using the class details and directly  initialize the instance     variables.
+2.  Writing of more than one constructor in a class is known as Constructor chaining, all the constructors must have different paremeters.
+3.   No we cannot call a subclass constructor from a super class constructor.
+4.   If we keep a return type of a constructor it will act as a  method in the class.
+5.   When we make a constructor and we don't pass any value to assign it to fields , then these constructors and called no argument      constructor.
+6.   In a program if we make a constructor to pass a value while making object of a class then we will make parameters inside the    constructor to receive those arguments and further in the program if we make an object and then we don't assign values while making   that object then we have to make a no argument constructor .
+   But in case of default constructor these are provided by compiler when we don't pass any arguments to the class of whom object is    being made.
+7. We need constructor overloading to pass various type of data and data on various parameters it will not restrict the constructor to    accept only a particular kind of data.
+8. Default constructors are provided by compiler of java if in case we don't write constructor of our own . Default constructor will accept 0     parameters. It will contain super() method which will call the parent class constructor.
+
+     Ex=                         class Student{
+                                              int age;
+                                           Student(){
+                                       super();
+  			}
+				}
+                    public class Example{
+                             public static void main(String []args){
+                                   Student a = new Student();
+                               }
+
