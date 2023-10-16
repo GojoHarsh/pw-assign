@@ -1,0 +1,16 @@
+1. By using $git --version command we can check if git is available on our system or not.
+
+2.By using $git init command we can initialize a git repository.
+
+3. By using $git --global user.name we can change the name and using  $git--global user.email we       can assign name and email of the user on git.
+
+4. By using  '$git add .'command we can add all the files from working area to staging  area.
+
+
+5. By using '$git rem --cached file name' we can remove the file from staging area.
+
+6. For a commit we have to using '$git commit  -m "with a message" 'command.
+
+7. Firt we will check on which branch it is on then we will change it to main and then we will copy the URL of the remote repository  and then we will paste it by using command $git remote add origin link and then we use $git push -u origin command to send it to remote repo.
+
+8. We can use $git clone command to copy all the files from a project repository but to get updates of the changes in that project repo we have to use git pull command to keep that project updated in our local repo.

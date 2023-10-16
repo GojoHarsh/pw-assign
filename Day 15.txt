@@ -1,0 +1,79 @@
+1.Program for taking string input:
+ import java.util.Scanner;
+public class Str {
+    public static void main(String[] args) {
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("Enter the name: ");
+        String name = sc.next();
+        System.out.println(name);
+	}
+	}
+
+2. We can concatenate strings in java by two ways :
+     (i) By using + operator
+     example:  String name2 = "Aditya" ;
+                  String name3 = "kumar";
+                 String fn= name2 + " " name3;
+                   System.out.println(fn);
+     (ii) By using concat () method:
+       String studentName = "Vaishnav";
+       System.out.println(studentName);
+       String updateName= studentName.concat( "Jaiswal");
+       System.out.println(updateName);
+
+3. To find the length of a string we use inbuilt length Method.
+       For example:
+       String lg= "Aman";
+       System.out.println(lg.length());
+
+4. We can compare strings in two ways:
+       (i)By using '==' operator we can compare reference of the objects.
+            for example:  String name3 = "Harsh";
+                         String name4 = "Harsh";
+                          Boolean comp = name3 == name4;
+                          System.out.println(comp);
+        (ii) by using 'equals()' method we can compare contents inside the objects:
+           for example:  String name3 = "Harsh";
+                         String name4 = "Harsh";
+                         Boolean comp = name3.equals(name4);
+                        System.out.println(comp);
+
+4.Program to find length of "refrigerator" string.
+String obj = "refrigerator";
+        System.out.println(obj.length());// by using inbuilt method 
+        char objex[]= obj.toCharArray();// without using inbuilt method
+        int leng = 0;
+        for( char ch : objex){
+            leng++;
+            
+        }
+        System.out.println(leng);
+
+5. Program to check if 'e' is present in Umbrella :
+String t= "Umbrella";
+          char c = 'e';
+          for (int i =0; i<t.length(); i++)
+          {
+            if (c == t.charAt(i)){
+                System.out.println("e is present");
+                break;
+            }
+            
+          }
+
+5. Program to delete all the consonants from a string "hello, have a good day":
+class Str{
+public static void main(String[]args){
+String newCon = "";
+          String con = "hello, have a good day";
+          char ch;
+          for (int i=0; i<con.length(); i++)
+          {ch = con.charAt(i);
+          if(ch == 'a' ||ch == 'e' ||ch == 'i' && ch|| 'o' && ch||'u')
+          {
+            newCon = newCon+ "" + ch;
+          }
+        }
+           System.out.println(newCon);
+}
+}

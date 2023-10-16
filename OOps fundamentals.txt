@@ -1,0 +1,9 @@
+1. To create a object in Java we first need to create the blueprint of it by making a class     and then inside main method we we need to use that Class name and a variable name and     then assign that variable a new object by using new keyword.
+2.New keyword is used to create new objects in Java.
+3.There are three types of variables in Java:
+	#Instance variable 
+	#Local variable
+	#Static variable
+4.The main difference between local and instance variable is that local variables are     created inside a method but instance variables are not created inside method.
+5.Instance variables are allocated heap memory and local variables get allocated static    memory.
+6.Through method overloading one or more method can have same name but its parameter     or datatype should be different.

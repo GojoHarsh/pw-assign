@@ -1,0 +1,16 @@
+1. In java Strings are built in class which is used to create object     basically string is     collection of characters stored inside double quotes.
+2. There are two types of strings in java:
+     Mutable string and Immutable string
+3. In first way we can directy assign literal to a string which will be stored inside heap     memory inside which string constant pool region is located.
+    for example:        String name = "Harsh";
+    In second way we first create object of the string then assign the literal to it. In this    object is stored inside heap memory but a copy of it will also be sent to string constant     pool.
+         For example:  String name= new String("Harsh");
+4. String constant pool is a region located inside the Heap memory where immutable string    literals are stored. It doesn't allow duplicate literals which means when when you create    two Strings objects in scp if both literals are same then both string refer the same    object this feature makes memory management efficient but if you change the value    explicitly for one reference all reference values will be changed.
+5.Immutable objects means its value can't be changed and if we try to change the value of     it then new object will be made whose value will be different no changes will be made on      the existing one.
+    whereas in mutable objects changes are made on the existing objects .
+6.String constant pool is located inside heap memory.
+   
+
+     
+
+

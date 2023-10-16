@@ -1,0 +1,31 @@
+1.  Statically typed languages are those in which we have to define which type of data we are storing inside a variable . Example of statically typed language are java, c .
+Dynamically typed languages are those in which we don't need to define the type of data we are storing inside a variable it will be automatically assigned during the runtime. Example of Dynamically typed language is python.
+
+2.Variables are the containers in which we store data on which we are going to perfom operation on.
+3. To assign a value to a variable we first need to defined its datatype and then we need to give a suitable name  and using '=' this operator we can assign value to variable.
+4.These are predefined datatypes provided by programming language  having a perticular assigned to them. The predefined datatypes in java are: byte, short,int,long,  char, float , double, boolean.
+5.Identifiers are the name given to variables, classes, objects  in java to recognize them these have to meaningful.
+6. Operators in java are :
+     '-' used for substraction
+     '+' used for addition
+     '=' used for assignment
+     '++' used for increment
+     '--' used for decrement
+     '/' used for division
+     '%' used for remainder
+7.Increment operator is used to increment the value stored in a variable by 1.
+ for example: class Increment
+                     public static void main(string[]args)
+	    { int a = 5;
+	     int b = ++a;
+                     system.out.println(b);
+	     }
+output will be 6.
+      Decrement operator is used to increment the value stored in a variable by 1.
+      class Increment
+                     public static void main(string[]args)
+	    { int a = 5;
+	     int b = --a;
+                     system.out.println(b);
+	     }
+output will be 4.
