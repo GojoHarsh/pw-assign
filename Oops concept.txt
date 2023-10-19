@@ -1,0 +1,135 @@
+1.Inheritance is a pillar of object oriented programming in java, by using inheritance we reduce the lines of code and    promote reusability of code we do this by treating a class as parent class and assigning those same activities to other class     which we will call as child classes these child classes will have all the things present in the parent class like variables as that     of parent class, method as that of parent class but the constructor of parent class won't be available to the child class .
+
+2.Superclass is said to the class whose properties are going to be inherited by other classes and Subclass is said to those   classes to whom those activities gets inherited.
+
+3.Inheritance is implemented in java with the use of "extends" keyword .
+
+for example: 
+             public class MobilePhone{
+	void call{
+		system.out.println("You can make talk to someone at distant place!");
+                    }
+		}
+                      public class TouchScreen extends MobilePhone{
+		 
+				}
+                    public class FeaturePhone extends MobilePhone{
+                                 }
+
+In the above example MobilePhone is the parent class and TochScreen , FeaturePhone are child classes.
+
+4. Polymorphism is a greek word which means many forms, Polymorphism is a cocept where one thing has more      than     one forms.
+     for example: i am a boy and i am son for my parents , and a friend for my friends and boyfriend for my      girlfriend and       employee for my boss. In this situation human is same but in every other situation it is in       another form.
+     Polymorphism is of two types Static polymorphism and dynamic polymorphism.
+     Method overloading is example of static polymorphism and Method overriding is an example of dynamic           polymorphism.
+5.Method overloading can be done without performing inheritance but Method overriding cannot be    done without     performing inheritance.
+   In method overloading we increase the functionality of the methods as per needs but in Method overriding we    change    the whole functionality of the method which is inherited from superclass method.
+   Method overloading gets resolved at compile time but Method overriding gets resolved at runtime.
+   In method overloading data types gets changed but in Method overriding all the prototypes remain same.
+
+6.While we are only using subclasses in java by using inheritance  and overriding methods each time so to optimize code we    remove the description block from the superclass method and declare it as a abstract method by using "abstract" keyword,   And in a class we have any abstract method then we have to declare that class as an abstract class and we will not be able   to form objects of this class but this class can be used for reference of subclasses and methods inside of it can be   overriden.
+              for example:        abstract class Parents{
+    abstract void sleep();
+}
+
+class son extends Parents{
+    void sleep(){
+        System.out.println("Son wakes up at 10 am");
+    }
+}
+class daughter extends Parents{
+    void sleep(){
+        System.out.println("Daughter wakes up at 6 am");
+    }
+}
+public class Abst{
+    public static void main(String[] args) {
+        Parents shukla= new son();
+          shukla.sleep();
+
+    }
+}
+
+
+
+7.The main difference between abstract method and final method is that abstract method can be overriden but in case if we    declare a final method then we can't override it.
+            example of abstract class:  abstract class Harsh{
+    abstract public void human();
+}
+class Parents extends Harsh{
+    public void human(){
+        System.out.println("Harsh is a good boy");
+    }
+}
+class Girlfriend extends Harsh{
+public void human(){
+    System.out.println("Harsh is very introvert and kind");
+}
+}
+
+
+public class Over {
+    public static void main(String[] args) {
+        
+    }
+    
+}
+             example of final class	:
+class Harsh{
+    final  public void human(){
+        System.out.println("Harsh is a human");
+    }
+}
+class Parents extends Harsh{
+   }
+class Girlfriend extends Harsh{
+}
+
+8. Final class restrict the class from participating in inheritance, if we make a class final all its methods by default becomes      final.
+9.Encapsulation is used to hide the internal working of the methods by binding variables and methods together within a    class to achieve security whereas Abstraction is used to optimize the code further by overriding the methods inside of it in     the subclasses as per user needs.
+10.Compile time polymorphism is method overloading where data parameters should be different of the methods but they      can have same name these doesn't require inheritance.
+                 Example:  class Addition{
+    public int add( int a, int b){
+         return a+b;
+    }
+    public int add(int a,int b, int c , int d){
+        return a+b+c+d;
+    }
+  }
+public class Fil {
+    public static void main(String[] args) {
+        Addition one = new Addition();
+        System.out.println(one.add(2,4));
+        System.out.println(one.add(2, 2, 4, 2));
+    }
+    
+}
+
+But in case of method overriding we write the syntax of the code of the parent class again as per need in this inheritance is required and all the parameters should be same as that of parent class.
+Example of Method overriding:
+      class Parents{
+    void sleep(){
+        System.out.println("Parents wake up at 6 am daily ");
+    }
+}
+
+class son extends Parents{
+    void sleep(){
+        System.out.println("Son wakes up at 10 am");
+    }
+}
+class daughter extends Parents{
+    void sleep(){
+        System.out.println("Daughter wakes up at 6 am");
+    }
+}
+public class Abst{
+    public static void main(String[] args) {
+        Parents shukla= new son();
+          shukla.sleep();
+
+    }
+}
+
+
+

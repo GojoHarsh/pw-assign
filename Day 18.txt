@@ -1,0 +1,6 @@
+1. We use static Keyword to manage memory for example if we want to store some data which will be same for all the classes then it will be stored in a static variable it makes the program efficient by converting the bytecode of it once into machine code and don't need to convert it again and again furthermore in the program.
+2. Class loading is the  process of arranging all the required resources in Java virtual machine  to make that code executable.
+    At first the java program gets compiled which converts it into bytecode which can neither be read by humans nor machine then it gets loaded to jvm then     jvm loads the class and converts the class file into a class object  next jvm allocates memory to the class variables and then assigns their default values and   
+   initializes the static blocks.
+3. No. we cannot mark a local variable as a static variable because  a static variable cannot be created inside a method , constructor but local variables are      created inside a method.
+4.
